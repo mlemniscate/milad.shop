@@ -66,6 +66,10 @@
       <Project>{C20FBD76-EC2F-4758-9266-E0EA5843F80F}</Project>
       <Name>milad.Framework.DependencyInjection</Name>
     </ProjectReference>
+    <ProjectReference Include="..\milad.Framework.Domain\milad.Framework.Domain.csproj">
+      <Project>{A6438C3A-EC29-489A-9D3A-91CD4CC62B2B}</Project>
+      <Name>milad.Framework.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\milad.Framework.Facade\milad.Framework.Facade.csproj">
       <Project>{DEB073DA-BE0B-404D-B546-7268504F22A9}</Project>
       <Name>milad.Framework.Facade</Name>
@@ -77,6 +81,10 @@
     <ProjectReference Include="..\milad.shop.CustomerContext.Application\milad.shop.CustomerContext.Application.csproj">
       <Project>{563140BF-4705-4FD4-A3B5-212BBB6862E4}</Project>
       <Name>milad.shop.CustomerContext.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\milad.shop.CustomerContext.Domain.Services\milad.shop.CustomerContext.Domain.Services.csproj">
+      <Project>{1003B64F-2B19-4344-A429-CEB8668F8CF1}</Project>
+      <Name>milad.shop.CustomerContext.Domain.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\milad.shop.CustomerContext.Facade\milad.shop.CustomerContext.Facade.csproj">
       <Project>{4EA6DD26-3CC1-4732-8BAA-A0935D936ED6}</Project>
