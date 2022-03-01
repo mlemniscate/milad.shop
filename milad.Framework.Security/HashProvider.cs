@@ -11,7 +11,7 @@ namespace milad.Framework.Security
     {
         public string Hash(string password, string saltedValue)
         {
-            // TODO: wirte a hash algorithm 
+            // TODO: wirte a hash algorithm
             return password + saltedValue;
         }
     }

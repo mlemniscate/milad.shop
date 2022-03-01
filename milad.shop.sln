@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.Framework.Facade", "m
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.shop.CustomerContext.Configuration", "milad.shop.CustomerContext.Configuration\milad.shop.CustomerContext.Configuration.csproj", "{16EA04EE-6339-4A8B-BA82-8191ADC03C62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.shop.CustomerContext.Domain.Services", "milad.shop.CustomerContext.Domain.Services\milad.shop.CustomerContext.Domain.Services.csproj", "{1003B64F-2B19-4344-A429-CEB8668F8CF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{16EA04EE-6339-4A8B-BA82-8191ADC03C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16EA04EE-6339-4A8B-BA82-8191ADC03C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16EA04EE-6339-4A8B-BA82-8191ADC03C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1003B64F-2B19-4344-A429-CEB8668F8CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1003B64F-2B19-4344-A429-CEB8668F8CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1003B64F-2B19-4344-A429-CEB8668F8CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1003B64F-2B19-4344-A429-CEB8668F8CF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,6 +132,7 @@ Global
 		{C20FBD76-EC2F-4758-9266-E0EA5843F80F} = {C47E294D-B573-48B3-902E-335CBD8F13B4}
 		{DEB073DA-BE0B-404D-B546-7268504F22A9} = {C47E294D-B573-48B3-902E-335CBD8F13B4}
 		{16EA04EE-6339-4A8B-BA82-8191ADC03C62} = {CD8627D2-24C8-491D-84C8-91A32284BD95}
+		{1003B64F-2B19-4344-A429-CEB8668F8CF1} = {0BDE419E-0528-4796-B44E-E6F408A2EB64}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7A02DA4-599A-4337-8F24-8E0F29927963}
