@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.shop.CustomerContext.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.shop.CustomerContext.Domain.Services", "milad.shop.CustomerContext.Domain.Services\milad.shop.CustomerContext.Domain.Services.csproj", "{1003B64F-2B19-4344-A429-CEB8668F8CF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.shop.CustomerContext.Infrastructure.Persistence", "milad.shop.CustomerContext.Infrastructure.Persistence\milad.shop.CustomerContext.Infrastructure.Persistence.csproj", "{2EA8C9B4-39DC-42F7-98FF-82D99DC7B340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.Framework.Persistence", "milad.Framework.Persistence\milad.Framework.Persistence.csproj", "{D400883D-EFE7-4422-9EEA-E9A85727F264}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +113,14 @@ Global
 		{1003B64F-2B19-4344-A429-CEB8668F8CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1003B64F-2B19-4344-A429-CEB8668F8CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1003B64F-2B19-4344-A429-CEB8668F8CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA8C9B4-39DC-42F7-98FF-82D99DC7B340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA8C9B4-39DC-42F7-98FF-82D99DC7B340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA8C9B4-39DC-42F7-98FF-82D99DC7B340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA8C9B4-39DC-42F7-98FF-82D99DC7B340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D400883D-EFE7-4422-9EEA-E9A85727F264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D400883D-EFE7-4422-9EEA-E9A85727F264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D400883D-EFE7-4422-9EEA-E9A85727F264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D400883D-EFE7-4422-9EEA-E9A85727F264}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,6 +145,8 @@ Global
 		{DEB073DA-BE0B-404D-B546-7268504F22A9} = {C47E294D-B573-48B3-902E-335CBD8F13B4}
 		{16EA04EE-6339-4A8B-BA82-8191ADC03C62} = {CD8627D2-24C8-491D-84C8-91A32284BD95}
 		{1003B64F-2B19-4344-A429-CEB8668F8CF1} = {0BDE419E-0528-4796-B44E-E6F408A2EB64}
+		{2EA8C9B4-39DC-42F7-98FF-82D99DC7B340} = {9AB574DE-33A4-40AF-A318-2FCB5732C250}
+		{D400883D-EFE7-4422-9EEA-E9A85727F264} = {C47E294D-B573-48B3-902E-335CBD8F13B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7A02DA4-599A-4337-8F24-8E0F29927963}
