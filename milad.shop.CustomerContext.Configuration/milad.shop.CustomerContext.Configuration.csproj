@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16EA04EE-6339-4A8B-BA82-8191ADC03C62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>milad.shop.CustomerContext.Configuration</RootNamespace>
+    <AssemblyName>milad.shop.CustomerContext.Configuration</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.4.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.5.1.1\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\milad.Framework.Application\milad.Framework.Application.csproj">
+      <Project>{103FAB2B-6D2A-444D-A51D-6EBBE3087562}</Project>
+      <Name>milad.Framework.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\milad.Framework.Core\milad.Framework.Core.csproj">
+      <Project>{4CE46360-D57C-429D-96C6-C6C7588B5AAA}</Project>
+      <Name>milad.Framework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\milad.Framework.DependencyInjection\milad.Framework.DependencyInjection.csproj">
+      <Project>{C20FBD76-EC2F-4758-9266-E0EA5843F80F}</Project>
+      <Name>milad.Framework.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\milad.Framework.Facade\milad.Framework.Facade.csproj">
+      <Project>{DEB073DA-BE0B-404D-B546-7268504F22A9}</Project>
+      <Name>milad.Framework.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\milad.Framework.Security\milad.Framework.Security.csproj">
+      <Project>{F2E8BCA0-8ED4-4EAC-B8AA-EE3CB9B41230}</Project>
+      <Name>milad.Framework.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\milad.shop.CustomerContext.Application\milad.shop.CustomerContext.Application.csproj">
+      <Project>{563140BF-4705-4FD4-A3B5-212BBB6862E4}</Project>
+      <Name>milad.shop.CustomerContext.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\milad.shop.CustomerContext.Facade\milad.shop.CustomerContext.Facade.csproj">
+      <Project>{4EA6DD26-3CC1-4732-8BAA-A0935D936ED6}</Project>
+      <Name>milad.shop.CustomerContext.Facade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
