@@ -5,10 +5,12 @@ using milad.Framework.Core.Security;
 using milad.Framework.DependencyInjection;
 using milad.Framework.Domain;
 using milad.Framework.Facade;
+using milad.Framework.Persistence;
 using milad.Framework.Security;
 using milad.shop.CustomerContext.Application.Customers;
 using milad.shop.CustomerContext.Domain.Services.Customers;
 using milad.shop.CustomerContext.Facade;
+using milad.shop.CustomerContext.Infrastructure.Persistence.Customers.Mappings;
 
 namespace milad.shop.CustomerContext.Configuration
 {
@@ -36,6 +38,12 @@ namespace milad.shop.CustomerContext.Configuration
             container.Register(
                 Classes.FromAssemblyContaining<EmailDuplicationChecker>()
                        .BasedOn<IDomainService>()
+                       .WithServiceAllInterfaces()
+                       .LifestyleTransient());
+
+            container.Register(
+                Classes.FromAssemblyContaining<CustomerMapping>()
+                       .BasedOn<IEntityMapping>()
                        .WithServiceAllInterfaces()
                        .LifestyleTransient());
                        

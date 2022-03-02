@@ -29,7 +29,7 @@ namespace milad.shop.CustomerContext.Infrastructure.Persistence.Customers.Mappin
                 .IsMaxLength()
                 .IsRequired();
 
-            HasMany(c => c.Addresses) 
+            HasMany(c => c.Addresses)
                 .WithRequired()
                 .HasForeignKey(a => a.CustomerId)
                 .WillCascadeOnDelete(true);

@@ -1,4 +1,5 @@
-﻿using milad.shop.CustomerContext.Domain.Customers;
+﻿using milad.Framework.Persistence;
+using milad.shop.CustomerContext.Domain.Customers;
 using milad.shop.CustomerContext.Domain.Customers.Services;
 using System;
 using System.Collections.Generic;
@@ -11,14 +12,22 @@ namespace milad.shop.CustomerContext.Infrastructure.Persistence.Customers
 {
     public class CustomerRepository : ICustomerRepository
     {
+        private readonly DbContextBase dbContext;
+
+        public CustomerRepository(IDbContext dbContext)
+        {
+            this.dbContext = (DbContextBase)dbContext;
+        }
+
         public bool Contains(Expression<Func<Customer, bool>> predicate)
         {
-            throw new NotImplementedException();
+            dbContext.SaveChanges();
+            return true;
         }
 
         public void CreateCustomer(Customer customer)
         {
-            throw new NotImplementedException();
+            dbContext.Set<Customer>().Add(customer);
         }
     }
 }

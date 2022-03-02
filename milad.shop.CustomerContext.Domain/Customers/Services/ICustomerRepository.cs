@@ -1,4 +1,5 @@
-﻿using System;
+﻿using milad.Framework.Core.Persistence;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace milad.shop.CustomerContext.Domain.Customers.Services
 {
-    public interface ICustomerRepository
+    public interface ICustomerRepository : IRepository
     {
         void CreateCustomer(Customer customer);
 

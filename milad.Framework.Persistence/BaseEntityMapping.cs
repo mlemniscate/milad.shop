@@ -4,7 +4,9 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace milad.Framework.Persistence
 {
-    public abstract class BaseEntityMapping<TEntity> : EntityTypeConfiguration<TEntity>
+    public abstract class BaseEntityMapping<TEntity> : 
+        EntityTypeConfiguration<TEntity>,
+        IEntityMapping
         where TEntity : BaseEntity
     {
         protected BaseEntityMapping()

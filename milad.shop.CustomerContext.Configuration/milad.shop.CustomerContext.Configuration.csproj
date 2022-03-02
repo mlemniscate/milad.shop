@@ -74,6 +74,10 @@
       <Project>{DEB073DA-BE0B-404D-B546-7268504F22A9}</Project>
       <Name>milad.Framework.Facade</Name>
     </ProjectReference>
+    <ProjectReference Include="..\milad.Framework.Persistence\milad.Framework.Persistence.csproj">
+      <Project>{D400883D-EFE7-4422-9EEA-E9A85727F264}</Project>
+      <Name>milad.Framework.Persistence</Name>
+    </ProjectReference>
     <ProjectReference Include="..\milad.Framework.Security\milad.Framework.Security.csproj">
       <Project>{F2E8BCA0-8ED4-4EAC-B8AA-EE3CB9B41230}</Project>
       <Name>milad.Framework.Security</Name>
@@ -89,6 +93,10 @@
     <ProjectReference Include="..\milad.shop.CustomerContext.Facade\milad.shop.CustomerContext.Facade.csproj">
       <Project>{4EA6DD26-3CC1-4732-8BAA-A0935D936ED6}</Project>
       <Name>milad.shop.CustomerContext.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\milad.shop.CustomerContext.Infrastructure.Persistence\milad.shop.CustomerContext.Infrastructure.Persistence.csproj">
+      <Project>{2EA8C9B4-39DC-42F7-98FF-82D99DC7B340}</Project>
+      <Name>milad.shop.CustomerContext.Infrastructure.Persistence</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

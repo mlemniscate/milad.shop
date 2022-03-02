@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2EA8C9B4-39DC-42F7-98FF-82D99DC7B340}</ProjectGuid>
+    <ProjectGuid>{84E3001C-5E89-40CA-990D-3CB9AA37B39B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>milad.shop.CustomerContext.Infrastructure.Persistence</RootNamespace>
-    <AssemblyName>milad.shop.CustomerContext.Infrastructure.Persistence</AssemblyName>
+    <RootNamespace>milad.shop.Persistence</RootNamespace>
+    <AssemblyName>milad.shop.Persistence</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,20 +52,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers\CustomerRepository.cs" />
-    <Compile Include="Customers\Mappings\AddressMapping.cs" />
-    <Compile Include="Customers\Mappings\CustomerMapping.cs" />
+    <Compile Include="Migrations\202203020748393_CustomerAggrigateAdded.cs" />
+    <Compile Include="Migrations\202203020748393_CustomerAggrigateAdded.designer.cs">
+      <DependentUpon>202203020748393_CustomerAggrigateAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\milad.Framework.Core\milad.Framework.Core.csproj">
-      <Project>{4CE46360-D57C-429D-96C6-C6C7588B5AAA}</Project>
-      <Name>milad.Framework.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\milad.Framework.Domain\milad.Framework.Domain.csproj">
-      <Project>{A6438C3A-EC29-489A-9D3A-91CD4CC62B2B}</Project>
-      <Name>milad.Framework.Domain</Name>
-    </ProjectReference>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\milad.Framework.Persistence\milad.Framework.Persistence.csproj">
       <Project>{D400883D-EFE7-4422-9EEA-E9A85727F264}</Project>
       <Name>milad.Framework.Persistence</Name>
@@ -73,11 +73,15 @@
       <Project>{20DE739F-D1FA-4438-B306-F621F3BD8B06}</Project>
       <Name>milad.shop.CustomerContext.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\milad.shop.CustomerContext.Infrastructure.Persistence\milad.shop.CustomerContext.Infrastructure.Persistence.csproj">
+      <Project>{2EA8C9B4-39DC-42F7-98FF-82D99DC7B340}</Project>
+      <Name>milad.shop.CustomerContext.Infrastructure.Persistence</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <EmbeddedResource Include="Migrations\202203020748393_CustomerAggrigateAdded.resx">
+      <DependentUpon>202203020748393_CustomerAggrigateAdded.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

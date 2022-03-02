@@ -52,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEntityMapping.cs" />
+    <Compile Include="DbContextBase.cs" />
+    <Compile Include="IDbContext.cs" />
+    <Compile Include="IEntityMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
