@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 
 namespace milad.shop.CustomerContext.Domain.Customers.Services
 {
-    public interface ICustomerRepository : IRepository
+    public interface ICustomerRepository : IRepository<Customer>
     {
         void CreateCustomer(Customer customer);
 
         bool Contains(Expression<Func<Customer, bool>> predicate);
+
+        Customer GetCustomer(Guid customerId);
     }
 }

@@ -2,32 +2,34 @@
 using milad.shop.CustomerContext.Domain.Customers;
 using milad.shop.CustomerContext.Domain.Customers.Services;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace milad.shop.CustomerContext.Infrastructure.Persistence.Customers
 {
-    public class CustomerRepository : ICustomerRepository
+    public class CustomerRepository : RepositoryBase<Customer>,ICustomerRepository
     {
         private readonly DbContextBase dbContext;
 
-        public CustomerRepository(IDbContext dbContext)
+        public CustomerRepository(IDbContext dbContext) : base(dbContext)
         {
             this.dbContext = (DbContextBase)dbContext;
         }
 
         public bool Contains(Expression<Func<Customer, bool>> predicate)
         {
-            dbContext.SaveChanges();
-            return true;
+            return Set.Any(predicate); 
         }
 
         public void CreateCustomer(Customer customer)
         {
-            dbContext.Set<Customer>().Add(customer);
+            Set.Add(customer);
+        }
+
+        public Customer GetCustomer(Guid customerId)
+        {
+            return GetById(customerId);
         }
     }
 }

@@ -5,15 +5,21 @@ using milad.shop.CustomerContext.Domain.Customers.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace milad.shop.CustomerContext.Domain.Customers
 {
-    public class Customer : BaseEntity
+    public class Customer : BaseEntity, IAggregateRoot<Customer>
     {
         private readonly IEmailDuplicationChecker emailDuplicationChekcer;
         private readonly IHashProvider hashProvider;
+
+        public Customer()
+        {
+
+        }
 
         public Customer(
             IEmailDuplicationChecker emailDuplicationChekcer,
@@ -39,6 +45,11 @@ namespace milad.shop.CustomerContext.Domain.Customers
         public string Password { get; set; }
 
         public ICollection<Address> Addresses { get; set; }
+
+        public IEnumerable<Expression<Func<Customer, object>>> GetAggregateExpressions()
+        {
+            yield return c => c.Addresses;
+        }
 
         private void SetEmail(string email)
         {

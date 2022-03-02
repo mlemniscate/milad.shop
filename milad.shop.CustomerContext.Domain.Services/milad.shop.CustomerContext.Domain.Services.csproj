@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\milad.Framework.Core\milad.Framework.Core.csproj">
+      <Project>{4CE46360-D57C-429D-96C6-C6C7588B5AAA}</Project>
+      <Name>milad.Framework.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\milad.Framework.Domain\milad.Framework.Domain.csproj">
       <Project>{A6438C3A-EC29-489A-9D3A-91CD4CC62B2B}</Project>
       <Name>milad.Framework.Domain</Name>
