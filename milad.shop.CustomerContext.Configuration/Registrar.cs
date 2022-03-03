@@ -32,6 +32,11 @@ namespace milad.shop.CustomerContext.Configuration
                          .LifestyleScoped());
 
             container.Register(
+                Component.For<IUnitOfWork>()
+                         .ImplementedBy<UnitOfWork>()
+                         .LifestyleScoped());
+
+            container.Register(
                 Classes.FromAssemblyContaining<SignupCommandHandler>()
                        .BasedOn(typeof(ICommandHandler<>))
                        .WithServiceAllInterfaces()
