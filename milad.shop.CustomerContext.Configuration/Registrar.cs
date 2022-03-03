@@ -29,7 +29,7 @@ namespace milad.shop.CustomerContext.Configuration
             container.Register(
                 Component.For<IDbContext>()
                          .ImplementedBy<ShopDbContext>()
-                         .LifestyleSingleton());
+                         .LifestyleScoped());
 
             container.Register(
                 Classes.FromAssemblyContaining<SignupCommandHandler>()
@@ -60,6 +60,8 @@ namespace milad.shop.CustomerContext.Configuration
                        .BasedOn(typeof(IRepository<>))
                        .WithServiceAllInterfaces()
                        .LifestyleTransient());
+
+
                        
         }
     }
