@@ -36,13 +36,15 @@ namespace milad.shop.CustomerContext.Domain.Customers
             this.hashProvider = hashProvider;
         }
 
-        public string FirstName { get; set; }
+        public string FirstName { get; private set; }
 
-        public string LastName { get; set; }
+        public string LastName { get; private set; }
 
-        public string Email { get; set; }
+        public string Email { get; private set; }
 
-        public string Password { get; set; }
+        public string Password { get; private set; }
+
+        public int Score { get; private set; }
 
         public ICollection<Address> Addresses { get; set; }
 

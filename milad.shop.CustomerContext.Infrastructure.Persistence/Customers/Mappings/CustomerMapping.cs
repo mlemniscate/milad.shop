@@ -29,6 +29,10 @@ namespace milad.shop.CustomerContext.Infrastructure.Persistence.Customers.Mappin
                 .IsMaxLength()
                 .IsRequired();
 
+            Property(c => c.Score)
+                .HasColumnType(SqlDbType.Int.ToString())
+                .IsRequired();
+
             HasMany(c => c.Addresses)
                 .WithRequired()
                 .HasForeignKey(a => a.CustomerId)
