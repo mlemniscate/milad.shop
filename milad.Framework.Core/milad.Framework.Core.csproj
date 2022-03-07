@@ -45,19 +45,17 @@
     <Compile Include="Application\ICommandBus.cs" />
     <Compile Include="DependencyInjection\IDiContainer.cs" />
     <Compile Include="DependencyInjection\ServiceLocator.cs" />
+    <Compile Include="Domain\EventBus.cs" />
+    <Compile Include="Domain\EventHandler.cs" />
+    <Compile Include="Domain\EventSubscriptionItem.cs" />
+    <Compile Include="Domain\IAggregateRoot.cs" />
+    <Compile Include="Domain\IEventBus.cs" />
     <Compile Include="Persistence\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\IHashProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Domain\" />
     <Folder Include="Facade\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\milad.Framework.Domain\milad.Framework.Domain.csproj">
-      <Project>{A6438C3A-EC29-489A-9D3A-91CD4CC62B2B}</Project>
-      <Name>milad.Framework.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

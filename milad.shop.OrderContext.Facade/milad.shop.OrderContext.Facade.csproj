@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,9 +54,17 @@
       <Project>{DEB073DA-BE0B-404D-B546-7268504F22A9}</Project>
       <Name>milad.Framework.Facade</Name>
     </ProjectReference>
+    <ProjectReference Include="..\milad.shop.CustomerContext.Application.Contracts\milad.shop.CustomerContext.Application.Contracts.csproj">
+      <Project>{D99A8AA4-73E8-4EA8-B7CF-6072C5C83D60}</Project>
+      <Name>milad.shop.CustomerContext.Application.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\milad.shop.OrderContext.Application.Contracts\milad.shop.OrderContext.Application.Contracts.csproj">
       <Project>{9B53EF71-1ECA-4ECC-9F8A-3F8650C1E8C7}</Project>
       <Name>milad.shop.OrderContext.Application.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\milad.shop.OrderContext.Domain.Contracts\milad.shop.OrderContext.Domain.Contracts.csproj">
+      <Project>{7B21BB44-F8FF-4427-B894-C27ECF87866C}</Project>
+      <Name>milad.shop.OrderContext.Domain.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\milad.shop.OrderContext.Facade.Contracts\milad.shop.OrderContext.Facade.Contracts.csproj">
       <Project>{39A890E0-AF4A-4BAF-9EE0-C3D80DF665E9}</Project>

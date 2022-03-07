@@ -83,6 +83,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.shop.OrderContext.Fac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.shop.OrderContext.Facade.Contracts", "milad.shop.OrderContext.Facade.Contracts\milad.shop.OrderContext.Facade.Contracts.csproj", "{39A890E0-AF4A-4BAF-9EE0-C3D80DF665E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "milad.shop.OrderContext.Domain.Contracts", "milad.shop.OrderContext.Domain.Contracts\milad.shop.OrderContext.Domain.Contracts.csproj", "{7B21BB44-F8FF-4427-B894-C27ECF87866C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -197,6 +199,10 @@ Global
 		{39A890E0-AF4A-4BAF-9EE0-C3D80DF665E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39A890E0-AF4A-4BAF-9EE0-C3D80DF665E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39A890E0-AF4A-4BAF-9EE0-C3D80DF665E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B21BB44-F8FF-4427-B894-C27ECF87866C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B21BB44-F8FF-4427-B894-C27ECF87866C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B21BB44-F8FF-4427-B894-C27ECF87866C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B21BB44-F8FF-4427-B894-C27ECF87866C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -237,6 +243,7 @@ Global
 		{9B53EF71-1ECA-4ECC-9F8A-3F8650C1E8C7} = {5DB547FC-A231-4677-B5BD-46E43302DC59}
 		{698B34AD-0545-4937-87D6-BAD8FD7CD807} = {62F760FC-92A5-49ED-AA81-AD774E1D594F}
 		{39A890E0-AF4A-4BAF-9EE0-C3D80DF665E9} = {62F760FC-92A5-49ED-AA81-AD774E1D594F}
+		{7B21BB44-F8FF-4427-B894-C27ECF87866C} = {3C14F4C8-4710-4293-81BB-96EB2B01B30E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7A02DA4-599A-4337-8F24-8E0F29927963}

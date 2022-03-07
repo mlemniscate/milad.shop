@@ -1,4 +1,5 @@
-﻿using milad.Framework.Core.Security;
+﻿using milad.Framework.Core.Domain;
+using milad.Framework.Core.Security;
 using milad.Framework.Domain;
 using milad.shop.CustomerContext.Domain.Customers.Exceptions;
 using milad.shop.CustomerContext.Domain.Customers.Services;
@@ -47,6 +48,11 @@ namespace milad.shop.CustomerContext.Domain.Customers
         public int Score { get; private set; }
 
         public ICollection<Address> Addresses { get; set; }
+
+        public void UpdateScore(int score)
+        {
+            Score += score;
+        }
 
         public IEnumerable<Expression<Func<Customer, object>>> GetAggregateExpressions()
         {

@@ -1,4 +1,5 @@
-﻿using milad.Framework.Domain;
+﻿using milad.Framework.Core.Domain;
+using milad.Framework.Domain;
 using System;
 using System.Data.Entity;
 using System.Linq;

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A6438C3A-EC29-489A-9D3A-91CD4CC62B2B}</ProjectGuid>
+    <ProjectGuid>{7B21BB44-F8FF-4427-B894-C27ECF87866C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>milad.Framework.Domain</RootNamespace>
-    <AssemblyName>milad.Framework.Domain</AssemblyName>
+    <RootNamespace>milad.shop.OrderContext.Domain.Contracts</RootNamespace>
+    <AssemblyName>milad.shop.OrderContext.Domain.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,16 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseEntity.cs" />
-    <Compile Include="DomainException.cs" />
-    <Compile Include="IDomainService.cs" />
+    <Compile Include="Customers\OrderCreatedEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\milad.Framework.Core\milad.Framework.Core.csproj">
-      <Project>{4ce46360-d57c-429d-96c6-c6c7588b5aaa}</Project>
-      <Name>milad.Framework.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

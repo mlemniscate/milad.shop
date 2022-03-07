@@ -1,4 +1,6 @@
-﻿using System;
+﻿using milad.Framework.Core.DependencyInjection;
+using milad.Framework.Core.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +16,8 @@ namespace milad.Framework.Domain
         }
 
         public Guid Id { get; set; }
+
+        protected IEventBus EventBus => ServiceLocator.Current.Resolve<IEventBus>();
+
     }
 }

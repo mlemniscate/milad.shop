@@ -1,4 +1,4 @@
-﻿using milad.Framework.Domain;
+﻿using milad.Framework.Core.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

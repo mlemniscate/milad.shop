@@ -21,12 +21,8 @@ namespace milad.shop.OrderContext.Application
         public void Execute(CreateOrderCommand command)
         {
             var orderNumber = orderRepository.GenerateOrderNumber();
-            var order = new Order(orderNumber);
-
-            foreach (var item in command.Cart)
-            {
-                order.AddOrderItem(item.ProductId, item.Quantity, item.Price);
-            }
+            var cart = command.Cart.Select(c => new OrderItem(c.ProductId, c.Quantity, c.Price));
+            var order = new Order(orderNumber, cart);
 
             orderRepository.Create(order);
         }

@@ -10,6 +10,8 @@ namespace milad.shop.OrderContext.Application.Contracts
 {
     public class CreateOrderCommand : Command
     {
+        public Guid CustomerId { get; set; }
+
         public IList<OrderItem> Cart { get; set; }
     }
 }

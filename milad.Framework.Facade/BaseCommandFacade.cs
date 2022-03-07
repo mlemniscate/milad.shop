@@ -1,4 +1,6 @@
 ﻿using milad.Framework.Core.Application;
+using milad.Framework.Core.DependencyInjection;
+using milad.Framework.Core.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +18,6 @@ namespace milad.Framework.Facade
 
         protected ICommandBus CommandBus { get; }
 
-
+        protected IEventBus EventBus => ServiceLocator.Current.Resolve<IEventBus>();
     }
 }
